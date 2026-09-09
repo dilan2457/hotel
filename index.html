@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Aurora</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                xd Hotel Aura
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuNavegacion"
+                aria-controls="menuNavegacion"
+                aria-expanded="false"
+                aria-label="Mostrar navegación">
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#inicio">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habitaciones">
+                            Productos/Servicios
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#nosotros">
+                            Nosotros
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <main>
+
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-12 col-lg-6">
+                        <span class="badge bg-primary mb-3">
+                            Experiencia Premium
+                        </span>
+
+                        <h1 class="display-4 fw-bold">
+                            Viví una experiencia única en Hotel Aura
+                        </h1>
+
+                        <p class="lead">
+                            Disfrutá de habitaciones cómodas, servicios de calidad
+                            y una atención pensada para que tu estadía sea inolvidable.
+                        </p>
+                        <a href="#habitaciones" class="btn btn-primary btn-lg">
+                            Ver habitaciones
+                        </a>
+
+                    </div>
+
+                    <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=80"
+                            alt="Hotel de lujo"
+                            class="img-fluid rounded shadow">
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="container my-5">
+
+            <h2 class="text-center mb-4">
+                Conocé nuestro hotel
+            </h2>
+
+            <div id="carouselHotel"
+                class="carousel slide"
+                data-bs-ride="carousel">
+                <div class="carousel-indicators">
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselHotel"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Imagen 1">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselHotel"
+                        data-bs-slide-to="1"
+                        aria-label="Imagen 2">
+                    </button>
+
+                    <button
+                        type="button"
+                        data-bs-target="#carouselHotel"
+                        data-bs-slide-to="2"
+                        aria-label="Imagen 3">
+                    </button>
+
+                </div>
+
+
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img
+                            src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1200&q=80"
+                            class="d-block w-100"
+                            alt="Habitación del hotel">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80"
+                            class="d-block w-100"
+                            alt="Interior del hotel">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img
+                            src="https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1200&q=80"
+                            class="d-block w-100"
+                            alt="Piscina del hotel">
+                    </div>
+                </div>
+
+                <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselHotel"
+                    data-bs-slide="prev">
+
+                    <span class="carousel-control-prev-icon"></span>
+
+                    <span class="visually-hidden">
+                        Anterior
+                    </span>
+                </button>
+
+                <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselHotel"
+                    data-bs-slide="next">
+
+                    <span class="carousel-control-next-icon"></span>
+
+                    <span class="visually-hidden">
+                        Siguiente
+                    </span>
+
+                </button>
+
+            </div>
+
+        </section>
+
+        <section id="habitaciones" class="container py-5">
+            <div class="text-center mb-5">
+                <h2>
+                    Nuestras habitaciones
+                </h2>
+
+                <p class="text-muted">
+                    Elegí la opción que mejor se adapte a tu estadía.
+                </p>
+
+            </div>
+
+            <div class="row g-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Habitación Standard">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Habitación Standard
+                            </h5>
+
+                            <p class="card-text">
+                                Habitación cómoda para una estadía tranquila,
+                                equipada con todo lo necesario.
+                            </p>
+
+                            <span class="badge bg-secondary">
+                                Básica
+                            </span>
+
+                            <h5 class="mt-3">
+                                $45.000 / noche
+                            </h5>
+
+                            <button
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalReserva">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1595576508898-0ad5c879a061?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Suite Ejecutiva">
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Suite Ejecutiva
+                            </h5>
+
+                            <p class="card-text">
+                                Una habitación elegante diseñada para
+                                viajes de negocios y descanso.
+                            </p>
+
+                            <span class="badge bg-success">
+                                Premium
+                            </span>
+
+                            <h5 class="mt-3">
+                                $85.000 / noche
+                            </h5>
+                            <button
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalReserva">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-5 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Suite Familiar">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Suite Familiar
+                            </h5>
+
+                            <p class="card-text">
+                                Amplio espacio para disfrutar en familia
+                                con todas las comodidades.
+                            </p>
+
+                            <span class="badge bg-info">
+                                Familiar
+                            </span>
+
+                            <h5 class="mt-3">
+                                $95.000 / noche
+                            </h5>
+
+                            <button
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalReserva">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img
+                            src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=800&q=80"
+                            class="card-img-top"
+                            alt="Suite Presidencial">
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Suite Presidencial
+                            </h5>
+
+                            <p class="card-text">
+                                Nuestra habitación más exclusiva,
+                                pensada para una experiencia de lujo.
+                            </p>
+
+                            <span class="badge bg-warning text-dark">
+                                Exclusiva
+                            </span>
+
+                            <h5 class="mt-3">
+                                $150.000 / noche
+                            </h5>
+
+                            <button
+                                class="btn btn-primary"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modalReserva">
+                                Reservar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="container my-5">
+            <div class="alert alert-success" role="alert">
+                <h4 class="alert-heading">
+                    ¡Oferta especial!
+                </h4>
+
+                <p>
+                    Reservando 3 noches o más obtenés un
+                    <strong>15% de descuento</strong>.
+                </p>
+            </div>
+        </section>
+
+        <section id="nosotros" class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-12 col-lg-6">
+                    <img
+                        src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=900&q=80"
+                        alt="Interior Hotel Aurora"
+                        class="img-fluid rounded shadow">
+                </div>
+
+                <div class="col-12 col-lg-6 mt-4 mt-lg-0">
+                    <h2>
+                        Sobre Hotel Aura
+                    </h2>
+
+                    <p>
+                        Hotel Aura es un hotel ficticio creado para este
+                        proyecto académico. Nuestro objetivo es ofrecer
+                        una experiencia cómoda, moderna y agradable para
+                        cada huésped.
+                    </p>
+
+                    <p>
+                        Contamos con diferentes tipos de habitaciones,
+                        espacios de descanso y atención personalizada.
+                    </p>
+
+                    <button class="btn btn-outline-primary">
+                        Conocer más
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="container py-5">
+            <div class="text-center mb-4">
+                <h2>
+                    Contacto
+                </h2>
+
+                <p class="text-muted">
+                    ¿Tenés alguna consulta? Escribinos.
+                </p>
+            </div>
+
+
+            <div class="row justify-content-center">
+                <div class="col-12 col-lg-8">
+                    <form id="formularioContacto">
+                        <div class="mb-3">
+
+                            <label for="nombre" class="form-label">
+                                Nombre
+                            </label>
+
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="nombre"
+                                placeholder="Ingresá tu nombre"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label for="email" class="form-label">
+                                Email
+                            </label>
+
+                            <input
+                                type="email"
+                                class="form-control"
+                                id="email"
+                                placeholder="ejemplo@gmail.com"
+                                required>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label for="telefono" class="form-label">
+                                Teléfono
+                            </label>
+
+                            <input
+                                type="tel"
+                                class="form-control"
+                                id="telefono"
+                                placeholder="Ingresá tu teléfono">
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label for="motivo" class="form-label">
+                                Motivo de contacto
+                            </label>
+
+                            <select
+                                class="form-select"
+                                id="motivo">
+
+                                <option selected>
+                                    Seleccioná una opción
+                                </option>
+
+                                <option>
+                                    Consulta sobre habitaciones
+                                </option>
+
+                                <option>
+                                    Reserva
+                                </option>
+
+                                <option>
+                                    Reclamo
+                                </option>
+
+                                <option>
+                                    Otro
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="mb-3">
+
+                            <label for="mensaje" class="form-label">
+                                Mensaje
+                            </label>
+
+                            <textarea
+                                class="form-control"
+                                id="mensaje"
+                                rows="5"
+                                placeholder="Escribí tu mensaje">
+                            </textarea>
+
+                        </div>
+
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+
+                            Enviar
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <div
+        class="modal fade"
+        id="modalReserva"
+        tabindex="-1"
+        aria-labelledby="modalReservaLabel"
+        aria-hidden="true">
+
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title" id="modalReservaLabel">
+                        Reservar habitación
+                    </h5>
+
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Cerrar">
+                    </button>
+
+                </div>
+
+
+                <div class="modal-body">
+
+                    <p>
+                        Para realizar una reserva comunicate con
+                        Hotel Aura
+                    </p>
+
+                    <p>
+                        Teléfono: +6776767 676767 6767
+                    </p>
+
+                    <p>
+                        Email: reservas@676767.com
+                    </p>
+
+                </div>
+
+
+                <div class="modal-footer">
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal">
+
+                        Cerrar
+
+                    </button>
+
+                    <a
+                        href="#contacto"
+                        class="btn btn-primary"
+                        data-bs-dismiss="modal">
+
+                        Ir a contacto
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+
+        <div class="container">
+
+            <div class="row">
+
+                <!-- Información -->
+                <div class="col-12 col-md-4 mb-3">
+
+                    <h5>
+                        Hotel Aura
+                    </h5>
+
+                    <p>
+                        Tu descanso, nuestra prioridad.
+                    </p>
+
+                </div>
+
+
+                <!-- Contacto -->
+                <div class="col-12 col-md-4 mb-3">
+
+                    <h5>
+                        Contacto
+                    </h5>
+
+                    <p class="mb-1">
+                        6776767 676767 6767
+                    </p>
+
+                    <p class="mb-1">
+                        info@676767.com
+                    </p>
+
+                    <p>
+                        reservas@676767.com
+                    </p>
+
+                </div>
+
+
+                <!-- Redes -->
+                <div class="col-12 col-md-4 mb-3">
+
+                    <h5>
+                        Redes sociales
+                    </h5>
+
+                    <p class="mb-1">
+                        Instagram: @hotelaurora
+                    </p>
+
+                    <p class="mb-1">
+                        Facebook: Hotel Aura
+                    </p>
+
+                    <p>
+                        TikTok: @hotelaura
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <hr>
+
+
+            <div class="text-center">
+
+                <p class="mb-0">
+                    © 2026 Hotel Aura - Todos los derechos reservados.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="./bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
